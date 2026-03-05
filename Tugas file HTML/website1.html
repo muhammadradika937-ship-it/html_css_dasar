@@ -1,200 +1,203 @@
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
-    <title>Berita Hari Ini</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita Hari Ini & Form</title>
+    
+    <style>
+        /* --- GAYA UMUM --- */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        /* --- GAYA ARTIKEL --- */
+        .artikel {
+            font-family: Verdana, sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+        .artikel-header {
+            text-align: center;
+        }
+        .artikel-header img {
+            max-width: 100%;
+            height: auto;
+        }
+        .text-blue { color: blue; }
+        .text-red { color: red; }
+        .text-purple { color: purple; }
+        .text-orange { color: orange; }
+
+        /* --- GAYA TABEL DATA --- */
+        .table-data {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .table-data td, .table-data th {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .table-data .header {
+            background-color: #1e90ff;
+            color: white;
+        }
+        .table-data .data-cell {
+            background-color: black;
+            color: white;
+        }
+        .bg-yellow { background-color: yellow; }
+        .bg-red { background-color: red; }
+        .bg-green { background-color: green; }
+        .bg-purple { background-color: purple; color: white; }
+
+        /* --- GAYA TABEL FORM SISWA --- */
+        .table-form {
+            border-collapse: collapse;
+            width: 500px;
+            margin-bottom: 20px;
+        }
+        .table-form td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .table-form .judul {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .bg-nama { background-color: orange; }
+        .bg-tempat { background-color: #3b6ea5; color: white; }
+        .bg-jk { background-color: #ffc000; }
+        .bg-kelas { background-color: #70ad47; }
+        .bg-alamat { background-color: black; color: white; }
+        
+        .table-form input[type="text"], 
+        .table-form select, 
+        .table-form textarea {
+            width: 90%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .table-form textarea {
+            height: 80px;
+        }
+        .table-form .submit {
+            text-align: center;
+        }
+        .table-form button {
+            padding: 8px 20px;
+            cursor: pointer;
+        }
+
+        .area {
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
-    <font face="Verdana" size="5">
-        <center>
-            <h1>Game yang sedang diGandrungi oleh anak anak zaman sekarang</h1>
+
+    <div class="artikel">
+        <div class="artikel-header">
+            <h1>Game yang sedang digandrungi oleh anak-anak zaman sekarang</h1>
             <img src="./image/gambar4.jpg" alt="PointBlank" width="700">
-        </center>
+        </div>
         <p>
-                    <b><i>PointBlank</i></b> adalah game RPG yang sering dimainkan oleh anak-anak zaman sekarang. Vendor
-        game ini adalah Pt.<b>Gemscool</b>. Game ini mulai popular sekitar tahun 2004-2005. Game ini dibagi
-        menjadi 2 team yaitu <font color="blue">Counter Terorist</font> dan <font color="red">Terorist</font>. Terdapat sekitar 500server yang disediakan
-        oleh <b>Gemscool</b>. Yaitu server <font color="purple">Newbie </font> 30 server, <font color="purple">Expert</font> sekitar 30 server dan sisanya adalah
-        server <font color="purple">Publik</font>. Terdapat beberapa mode permainan yaitu <font color="orange">Deathmatch, Bomb Mision, <b>ShotGun
-        Match</b></font>, dan yang terakhir mode <font color="orange">Dinosaurus</font>. Pt.<b>Gemscool</b> hanya menyediakan beberapa senjata
-        yang permanent, dan sisanya harus dibeli dengan Point maupun <u>G-Cash</u>. <u>G-Cash</u> adalah media
-        pembayaran Online untuk membeli sebuah senjata yang berdurasi. Harganya bermacam-macam
-        mulai dari<i> Rp. 10.000</i> sampai dengan ada yang sampai Rp. 1.000.000</bold></p>
+            <b><i>PointBlank</i></b> adalah game RPG yang sering dimainkan oleh anak-anak zaman sekarang. Vendor game ini adalah Pt.<b>Gemscool</b>. Game ini mulai popular sekitar tahun 2004-2005. Game ini dibagi menjadi 2 team yaitu <span class="text-blue">Counter Terorist</span> dan <span class="text-red">Terorist</span>. Terdapat sekitar 500 server yang disediakan oleh <b>Gemscool</b>. Yaitu server <span class="text-purple">Newbie</span> 30 server, <span class="text-purple">Expert</span> sekitar 30 server dan sisanya adalah server <span class="text-purple">Publik</span>. Terdapat beberapa mode permainan yaitu <span class="text-orange">Deathmatch, Bomb Mision, <b>ShotGun Match</b></span>, dan yang terakhir mode <span class="text-orange">Dinosaurus</span>. Pt.<b>Gemscool</b> hanya menyediakan beberapa senjata yang permanent, dan sisanya harus dibeli dengan Point maupun <u>G-Cash</u>. <u>G-Cash</u> adalah media pembayaran Online untuk membeli sebuah senjata yang berdurasi. Harganya bermacam-macam mulai dari <i>Rp. 10.000</i> sampai dengan ada yang sampai <i><b><u>Rp. 1.000.000.</u></b></i>
+        </p>
+    </div>
 
-        <style>
-table {
-    border-collapse: collapse;
-    width: 100%;
-    text-align: center;
-}
+    <hr>
 
-td, th {
-    border: 2px solid black;
-    padding: 10px;
-}
-
-/* Warna */
-.header {
-    background-color: #1e90ff;
-    color: white;
-}
-
-.data {
-    background-color: black;
-    color: white;
-}
-
-.yellow { background-color: yellow; }
-.red { background-color: red; }
-.green { background-color: green; }
-.purple { background-color: purple; color: white; }
-</style>
-
-</head>
-<body>
-
-<table>
-
-<tr class="header">
-    <th rowspan="3" class="data">Data</th>
-    <th>No. reg</th>
-    <th>Keymap</th>
-    <th>Transaction</th>
-    <th colspan="2">Account</th>
-    <th>Sum</th>
-</tr>
-
-<tr>
-    <td class="yellow"></td>
-    <td class="red"></td>
-    <td></td>
-    <td class="green"></td>
-    <td class="green"></td>
-    <td></td>
-</tr>
-
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-
-<tr>
-    <td colspan="6" class="purple">Total</td>
-    <td></td>
-</tr>
-
-</table>
-
-<style>
-    body {
-        font-family: Arial;
-    }
-
-    table {
-        border-collapse: collapse;
-        width: 500px;
-    }
-
-    td {
-        border: 1px solid black;
-        padding: 10px;
-    }
-
-    .judul {
-        background-color: purple;
-        color: white;
-        text-align: center;
-        font-size: 20px;
-    }
-
-    .nama {background-color: orange;}
-    .tempat {background-color: #3b6ea5; color: white;}
-    .jk {background-color: #ffc000;}
-    .kelas {background-color: #70ad47;}
-    .alamat {background-color: black; color: white;}
-
-    input, select, textarea {
-        width: 95%;
-        padding: 5px;
-    }
-
-    textarea {
-        height: 80px;
-    }
-
-    .submit {
-        text-align: center;
-    }
-</style>
-
-
-
-<body>
-
-    <table>
-
-        <tr>
-            <td colspan="3" class="judul">Form Input Siswa</td>
+    <table class="table-data">
+        <tr class="header">
+            <th rowspan="3" class="data-cell">Data</th>
+            <th>No. reg</th>
+            <th>Keymap</th>
+            <th>Transaction</th>
+            <th colspan="2">Account</th>
+            <th>Sum</th>
         </tr>
-
         <tr>
-            <td colspan="3" class="judul">Form Input Siswa</td>
+            <td class="bg-yellow"></td>
+            <td class="bg-red"></td>
+            <td></td>
+            <td class="bg-green"></td>
+            <td class="bg-green"></td>
+            <td></td>
         </tr>
-
         <tr>
-            <td class="nama">Nama</tr>
-            <td>:</td>
-            <td><input type=text></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-
         <tr>
-            <td class="tempat">Tempat Lahir</td>
-            <td>:</td>
-            <td><input type="text"></td>
+            <td colspan="6" class="bg-purple">Total</td>
+            <td></td>
         </tr>
-
-        <tr>
-            <td class="jk">Jenis Kelamin</td>
-            <td>:</td>
-            <td>
-                <input type="radio" name="jk"> Laki-Laki <br>
-                <input type="radio" name="jk"> Perempuan
-            </td>
-        </tr>
-
-        <tr>
-    <td class="kelas">Kelas</td>
-    <td>:</td>
-    <td>
-        <select>
-            <option>Pilih Kelas</option>
-            <option>X RPL</option>
-            <option>X TKJ</option>
-            <option>X MM</option>
-        </select>
-    </td>
-</tr>
-
-<tr>
-    <td class="alamat">Alamat</td>
-    <td class="alamat">:</td>
-    <td><textarea></textarea></td>
-</tr>
-
-<tr>
-    <td colspan="3" class="submit">
-        <button>Submit</button>
-    </td>
-</tr>
-
-
     </table>
-</body>
 
-        <ui>
-            <li><a href="Testing.html">Back to home</a></li>
-        <ui>
+    <br>
+
+    <form action="#" method="POST">
+        <table class="table-form">
+            <tr>
+                <td colspan="3" class="judul">Form Input Siswa</td>
+            </tr>
+            <tr>
+                <td class="bg-nama">Nama</td>
+                <td>:</td>
+                <td><input type="text" name="nama" required></td>
+            </tr>
+            <tr>
+                <td class="bg-tempat">Tempat Lahir</td>
+                <td>:</td>
+                <td><input type="text" name="tempat_lahir" required></td>
+            </tr>
+            <tr>
+                <td class="bg-jk">Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <label><input type="radio" name="jk" value="Laki-Laki"> Laki-Laki</label><br>
+                    <label><input type="radio" name="jk" value="Perempuan"> Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="bg-kelas">Kelas</td>
+                <td>:</td>
+                <td>
+                    <select name="kelas">
+                        <option value="">Pilih Kelas</option>
+                        <option value="X RPL">X RPL</option>
+                        <option value="X TKJ">X TKJ</option>
+                        <option value="X MM">X MM</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="bg-alamat">Alamat</td>
+                <td class="bg-alamat">:</td>
+                <td class="area"><textarea name="alamat"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="submit">
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <ul>
+        <li><a href="Testing.html">Back to home</a></li>
+    </ul>
+
 </body>
 </html>
