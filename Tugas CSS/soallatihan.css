@@ -1,0 +1,184 @@
+body {
+    background-color: lightblue;
+    color: white;
+}
+
+h1 {
+    color: red;
+    font-size: 40px;
+    text-align: center;
+}
+
+.kotak {
+    background-color: gray;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+box1 {
+    margin: 20px;
+    padding: 10px;
+    background: orange;
+}
+
+.box2 {
+    margin: 40px;
+    padding: 30px;
+    background: green;
+}
+
+.box-relative {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    background: lightcoral;
+    padding: 20px;
+}
+
+.parent {
+    position: relative;
+}
+
+.box-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: gold;
+    padding: 15px;
+}
+
+.navtar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 15;
+}
+
+.box1 {
+    position: absolute;
+    z-index: 1;
+    background: red;
+}
+
+.box2 {
+    position: absolute;
+    z-index: 1;
+    background: blue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item {
+    background: teal;
+    padding: 20px;
+    color: white;
+}
+
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.flex-item {
+    width: 150px;
+    background: purple;
+}
+
+.grid-container {
+    width: 100%;
+}
+
+.grid-item {
+    float: left;
+    width: 30%;
+    margin: 1.5%;
+    background: teal;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    background: lightblue;
+    text-align: center;
+    padding: 20px;
+}
+
+.sidebar {
+    float: left;
+    width: 30%;
+    background: lightgray;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    float: left;
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footer {
+    clear: both;
+    background: lightblue;
+    text-align: center;
+    padding: 15px;
+}
+
+.kotak {
+    border-radius: 10px;
+}
+
+.kotak {
+    box-shadow: 2px 2px 5px gray;
+}
+
+h1 {
+    text-transform: uppercase
+}
+
+.menu:hover {
+    background-color: yellow;
+}
+
+.gambar {
+    opacity: 0.8;
+}
+
+.button {
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: red;
+}
+
+.button {
+    cursor: pointer;
+}
