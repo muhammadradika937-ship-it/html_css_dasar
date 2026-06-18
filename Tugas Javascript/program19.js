@@ -1,7 +1,15 @@
-let total = 0;
+const readline = require('readline');
+const rl = readline.createInterface({input: process.stdin, output: process.stdout});
 
-for (let i = 1; i <= 10; i++) {
-    total += i;
-}
-
-console.log("Total:", total);
+rl.question("Masukkan x: ", function(inputX) {
+    rl.question("Masukkkan y: ", function(inputY) {
+        rl.question("MAsukkan z: ", function(inputZ) {
+            let x = parseInt(inputX);
+            let y = parseInt(inputY);
+            let z = parseInt(inputZ);
+            console.log("Nilai terbesar: " + Math.max(x,y,z));
+            console.log("Nilai terkecil: " + Math.min(x,y,z));
+            rl.close();
+        });
+    });
+});

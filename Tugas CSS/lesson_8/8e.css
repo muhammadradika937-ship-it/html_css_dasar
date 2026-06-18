@@ -1,0 +1,28 @@
+.title{
+    font-size: 30px;
+    font-family: Arial;
+}
+
+.pickup,
+.destination{
+    display: block;
+    width: 300px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgb(240,240,240);
+}
+
+.request-button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-right: 10px;
+}
+
+.shedule-button{
+    background-color: rgb(240,240,240);
+    border: none;
+    padding: 12px 20px
+}

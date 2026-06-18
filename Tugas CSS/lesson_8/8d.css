@@ -1,0 +1,25 @@
+.first-name,
+.last-name{
+    display: inline-block;
+    width: 120px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.email{
+    display: block;
+    width: 268px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.sign-up-button{
+    background-color: rgb(0,123,255);
+    color: white;
+    border: none;
+    width: 292px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+
+}

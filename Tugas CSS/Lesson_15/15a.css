@@ -1,0 +1,16 @@
+body{
+    height: 3000px;
+}
+
+.close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+}

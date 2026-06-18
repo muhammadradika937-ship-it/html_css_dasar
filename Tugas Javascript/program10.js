@@ -1,5 +1,16 @@
-let tahunLahir = 2008;
-let tahunSekarang = 2026;
+const readline = require('readline');
+const rl = readline.createInterface({input: process.stdin, output: process.stdout});
 
-let umur = tahunSekarang - tahunLahir;
-console.log("Umur:", umur);
+rl.question("Judul Buku:",function(judul) {
+    rl.question("Penerbit:",function(Penerbit) {
+        rl.question("jumlah Buku:",function(jumlah) {
+            rl.question("Tanggal Pembelian:",function(Tanggal) {
+                console.log("Judul Buku:" + judul);
+                console.log("Penerbit:" + penerbit);
+                console.log("Jumlah Buku:" + jumlah);
+                console.log("Tanggal Pembelian:" + tanggal);
+                rl.close();
+            });
+        });
+    });
+});

@@ -1,8 +1,17 @@
-let angka = 5;
-let hasil = 1;
+const readline = require('readline');
+const rl = readline.createInterface({input: process.stdin, output: process.stdout});
 
-for (let i = 1; i <= angka; i++) {
-    hasil *= i;
-}
+rl.question("Masukkan satu huruf (A-Z): ", function(input) {
+    let huruf = input.trim().toUpperCase();
+    let vokal = ['A','E','I','O','U'];
+    let alfabet = /^[A-Z]$/;
 
-console.log("Faktoria1:", hasil);
+    if (!alfabet.test(huruf)) {
+        console.log("Bukan berupa huruf");
+    } else if (vokal.includes(huruf)) {
+        console.log(huruf + " adalah huruf Vokal");
+    } else {
+        console.log(huruf + " adalah huruf Konsonan");
+    }
+    rl.close();
+});

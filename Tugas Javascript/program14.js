@@ -1,7 +1,10 @@
-let angka = 25;
+const readline = require('readline');
+const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
 
-if (angka % 5 === 0) {
-    console.log("Kelipatan 5");
-} else {
-    console.log("Bukan kelipatan");
-}
+rl.question("Masukkan angka: ", function(input) {
+    let angka = parseFloat(input);
+    if (angka > 100) {
+        console.log("Nilai kamu sempurna");
+    }
+    rl.close();
+});

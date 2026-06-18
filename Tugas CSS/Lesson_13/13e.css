@@ -1,0 +1,55 @@
+.card{
+    border: 1px solid #ccc;
+    padding: 12px;
+    width: 35px;
+    font-family: Arial,sans-serif;
+    font-size: 13px;
+}
+
+.all-inboxes{
+    font-size: 11px;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.email-row{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.avatar{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.email-content{
+    flex: 1;
+}
+
+.name-time{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nama{
+    font-weight: bold;
+}
+
+.time {
+    color: grey;
+    font-size: 12px;
+}
+
+.subject{
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.preview{
+    color: grey;
+    margin-top: 2px;
+}

@@ -1,0 +1,23 @@
+body {
+  height: 3000px; /* supaya bisa scroll */
+}
+
+.fixed-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: lightgray;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background-color: darkgreen;
+  color: white;
+  padding: 12px;
+}

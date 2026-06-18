@@ -1,5 +1,12 @@
-for (let i = 1; i <= 20; i++) {
-    if (i % 2 === 0) {
-        console.log(i);
+const readline = require('readline');
+const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+
+rl.question("Masukkan bilangan bulat: ", function(input) {
+    let angka = parseInt(input);
+    if (angka % 7 === 0) {
+        console.log(angka + "adalah kelipatan 7");
+    } else {
+        console.log("Anda belum beruntung");
     }
-}
+    rl.close();
+});

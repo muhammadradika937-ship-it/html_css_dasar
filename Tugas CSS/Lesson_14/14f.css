@@ -1,0 +1,58 @@
+body{
+    height: 3000px;
+    font-family: Arial,sans-serif;
+    margin: 0;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+}
+
+.sidebar-left{
+    width: 70px;
+    height: 100%;
+    background-color: #202225;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 12px;
+}
+
+.avatar{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sidebar-right{
+    width: 150px;
+    height: 100%;
+    background-color: #2f3136;
+    color: white;
+    padding: 12px;
+}
+
+.channel-header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 13px;
+    color: #dcddde;
+}
+
+.channel{
+    color: #8e9297;
+    padding: 4px 0;
+    font-size: 14px;
+}
+
+.channel:hover{
+    color: white;
+    cursor: pointer;
+}

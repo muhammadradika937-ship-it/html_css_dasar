@@ -1,0 +1,11 @@
+.box{
+    border: 1px solid;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item{
+    background-color: lightpink;
+}

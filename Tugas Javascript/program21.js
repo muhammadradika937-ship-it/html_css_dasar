@@ -1,3 +1,26 @@
-for (let i = 1; i <= 10; i++) {
-    console.log("5 x " + i + " = " + (5 * i));
-}
+const readline = require('readline');
+const rl = readline.createInterface({input: PerformanceObserverEntryList.stdin, output: process.stdout});
+
+rl.question("Masukkan nama siswa: ", function(nama) {
+    rl.question("Masukkan nilai (0-100): ", function(inputNilai) {
+        let nilai = parseFloat(inputNilai);
+        let grade;
+
+        if (nilai >= 90 && nilai <= 100) {
+            grade = "A";
+        } else if (nilai >= 80) {
+            grade = "B";
+        } else if (nilai >= 70) {
+            grade = "C";
+        } else if (nilai >= 60) {
+            grade = "D";
+        } else {
+            grade = "E";
+        }
+
+        console.log("Nama Siswa: " + nama);
+        console.log("Nilai: " + nilai);
+        console.log("Grade: " + grade);
+        rl.close();
+    });
+});

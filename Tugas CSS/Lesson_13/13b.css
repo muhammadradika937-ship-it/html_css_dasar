@@ -1,0 +1,31 @@
+    .outer {
+        display: flex;
+      }
+
+      .left {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .right {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+
+      .row1 {
+        background-color: lightcoral;
+        padding: 4px;
+      }
+
+      .row2 {
+        background-color: lightyellow;
+        padding: 4px;
+      }

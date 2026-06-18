@@ -1,0 +1,36 @@
+body{
+    height: 3000px;
+}
+
+.video-ad{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    height: 180px;
+    background-color: grey;
+}
+
+.close-btn{
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.timestamp{
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+}

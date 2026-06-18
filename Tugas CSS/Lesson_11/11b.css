@@ -1,0 +1,17 @@
+.grid{
+    display: grid;
+    grid-template-columns: 50px 1fr 75px;
+    justify-content: space-between;
+}
+
+.box{
+    background-color: lightblue;
+}
+
+.box2{
+    background-color: lightpink;
+}
+
+.box3{
+    background-color: lightblue;
+}

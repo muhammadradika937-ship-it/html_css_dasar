@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    gap: 15px;
+}
+
+.card{
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.profile{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile2{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile3{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.name{
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.mutual{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.mutual-picture{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.add-btn{
+    background-color: rgb(29,155,240);
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%;
+}

@@ -1,0 +1,23 @@
+body{
+    height: 3000px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    background-color: darkgreen;
+    color: white;
+    padding: 12px;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+}
