@@ -3,35 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tesla</title>
+    <title>MS paint</title>
 
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            margin: 20px;
         }
 
         .judul {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        .gambar {
             text-align: center;
-            color: orangered;
-            font-weight: bold;
-            font-size: 26px;
-            text-decoration: underline;
-            margin-bottom: 40px;
         }
 
         .imej {
-            margin-top: 40px;
+            width: 800px;
         }
 
-        .text-green { color: green; }
-        .text-red { color: red; }
-        .text-purple { color: purple; }
-        .text-orange { color: orange; }
+        .txt-red {color: red;}
+
+        .table-form {
+            border-collapse: collapse;
+            width: 500px;
+            margin-bottom: 20px;
+        }
+        .table-form td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .table-form .judul {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .bg-nama { background-color: orange; }
+        .bg-tempat { background-color: #3b6ea5; color: white; }
+        .bg-jk { background-color: #ffc000; }
+        .bg-kelas { background-color: #70ad47; }
+        .bg-alamat { background-color: black; color: white; }
+        
+        .table-form input[type="text"], 
+        .table-form select, 
+        .table-form textarea {
+            width: 90%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .table-form textarea {
+            height: 80px;
+        }
+        .table-form .submit {
+            text-align: center;
+        }
+        .table-form button {
+            padding: 8px 20px;
+            cursor: pointer;
+        }
+
+        .area {
+            background-color: black;
+        }
 
         .table-data {
             border-collapse: collapse;
@@ -85,86 +116,38 @@
         .bg-green { background-color: green; }
         .bg-purple { background-color: purple; color: white; }
         }
-        .table-form {
-            border-collapse: collapse;
-            width: 500px;
-            margin-bottom: 20px;
-        }
-        .table-form td {
-            border: 1px solid black;
-            padding: 10px;
-        }
-        .table-form .judul {
-            background-color: purple;
-            color: white;
-            text-align: center;
-            font-size: 20px;
-            font-weight: bold;
-        }
-        .bg-nama { background-color: orange; }
-        .bg-tempat { background-color: #3b6ea5; color: white; }
-        .bg-jk { background-color: #ffc000; }
-        .bg-kelas { background-color: #70ad47; }
-        .bg-alamat { background-color: black; color: white; }
-        
-        .table-form input[type="text"], 
-        .table-form select, 
-        .table-form textarea {
-            width: 90%;
-            padding: 5px;
-            box-sizing: border-box;
-        }
-        .table-form textarea {
-            height: 80px;
-        }
-        .table-form .submit {
-            text-align: center;
-        }
-        .table-form button {
-            padding: 8px 20px;
-            cursor: pointer;
-        }
-
-        .area {
-            background-color: black;
-        }
-
-        
     </style>
 </head>
-
 <body>
+
     <div class="judul">
-        <div class="gambar">
-            Porsche welcomes challenge from tesla as it adapts to the EV world
-           <div class="imej"> <img src="../Tugas file HTML/image/porsche.png" alt="porsche" width="700px">
-            </div>
-        </div>
+        <h1>A dentist made a game in MS Paint and it's terrifying</h1>
+    </div>
+    <center>
+    <img class="imej" src="../Tugas file HTML/image/MS paint.png">
+    </center>
 
-        <p>
-            <b>Recently</b> the high-end EV world has become a Nurburgring arms race with Porsche and Tesla
-            vying for the best lap at the famed circuit.<span style="text-decoration: underline;"> <span class="text-purple">Taycan set a record</span></span> and <span class="text-red"><b>Tesla</b> </span> Elon Musk
-            decided that the Model S would best it. From early reports, the <span style="text-decoration: underline;"> <span class="text-purple">Fremont company did just that</span></span>
-             with a heavily modified vehicle.
+    <p>
+        The scariest thing about <a href="https://www.wohgame.com/">World of Horror</a> might be the fact that it's being lovingly crafted 
+        by a part-time dentist. <span class="txt-red"><b>Pawel Kozminski</b></span> is the sole creator of World of Horror, and he 
+        also practices dentistry in Poland, splitting his time between poking at people's molars 
+        and placing pixels in the perfect spots using MS Paint. Yes, that Paint.
+    </p>
 
-        </p>
+    <p>
+        World of Horror is borne of strange circumstances, which might explain why the game 
+        itself is so unsettling. It plays out in five short stories set in a seaside village in 1980s 
+        Japan, whose residents are falling into mass madness while eldritch monsters rise from 
+        the seas. Eerie chiptune music plays throughout the game, frantic and propelling. 
+        People have gone missing, festering demons are walking the streets, and sushi chefs 
+        are serving omakase with human eyeballs on the platter. Fight scenes are turn-based, 
+        forcing you to stare down your fears and face slaughter one move at a time.  
 
-        <p>
-            Ahead of the Tesla run, I sat down with Porsche's North America <span style="text-decoration: underline;">CEO</span>, Klaus Zellmer, to talk 
-        rivalries, where the <span style="text-decoration: underline;"><span class="text-green"><b>Taycan</b></span></span> sits in the EV world and the surprising demographics it's gathered 
-        from its subscription service.
-        </p>
+    </p>
 
-        <p>
-            <span style="font-style: italic;">"Many people are talking about competition and all that. We love competition. We come from 
-        the racetrack. The Nurburgring; we love that environment. But first and foremost, we want to 
-        present an alternative, carrying the badge Porsche and the brand promise -- to everything that 
-        is electric out there right now.</span>" Zellmer said. 
-        </p>
+    <hr style="border: none; border-top: 2px solid #333; margin: 20px 0;">
 
-        <hr style="border: none; border-top: 2px solid #333; margin: 20px 0;">
-
-        <p>
+    p>
             Apple never showed intentions of racing the <span style="text-decoration: underline;"><b>Nexus 7</b></span> to the bottom in the tablet game, and the 
         <span style="font-style: italic;"><b>iPhone 5c</b></span> is proof that it won't do that in the phone arena, either.
         </p>
@@ -189,53 +172,6 @@
             <ul>B. Terjadinya pergeseran struktur kekuasaan dari otokrasi menjadi oligarki.</ul>
             <ul>C. Mempercepat terwujudnya pemerintahan yang demokratis dan masyarakat madani.</ul>
         </p>
-
-        <table>
-            <thead>
-                <tr>
-                    <th rowspan="4" class="bg-data">DATA</th>
-                    <th rowspan="2" class="bg-jan-feb">Januari</th>
-                    <th class="bg-total-orange">TOTAL</th>
-                    <th rowspan="2" class="bg-jan-feb">Februari</th>
-                    <th class="bg-total-orange">TOTAL</th>
-                    <th colspan="2" class="bg-keluar">KELUAR</th>
-                    <th rowspan="2" class="bg-total-black">TOTAL</th>
-                </tr>
-
-                <tr>
-                    <th class="bg-masuk">MASUK</th>
-                    <th class="bg-masuk">MASUK</th>
-                    <th class="bg-jan-keluar">JANUARI</th>
-                    <th class="bg-feb-keluar">FEBRUARI</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td colspan="7" class="bg-total-black">TOTAL</td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
 
         <form action="#" method="POST">
         <table class="table-form">
@@ -296,16 +232,54 @@
         </table>
     </form>
 
-    <ul>
-        <li><a href="Testing.html">Back to home</a></li>
-    </ul>
+    <table>
+            <thead>
+                <tr>
+                    <th rowspan="4" class="bg-data">DATA</th>
+                    <th rowspan="2" class="bg-jan-feb">Januari</th>
+                    <th class="bg-total-orange">TOTAL</th>
+                    <th rowspan="2" class="bg-jan-feb">Februari</th>
+                    <th class="bg-total-orange">TOTAL</th>
+                    <th colspan="2" class="bg-keluar">KELUAR</th>
+                    <th rowspan="2" class="bg-total-black">TOTAL</th>
+                </tr>
 
-    </div>
-    </body>
+                <tr>
+                    <th class="bg-masuk">MASUK</th>
+                    <th class="bg-masuk">MASUK</th>
+                    <th class="bg-jan-keluar">JANUARI</th>
+                    <th class="bg-feb-keluar">FEBRUARI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="7" class="bg-total-black">TOTAL</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
 
-
-
-
+    
     
 </body>
 </html>

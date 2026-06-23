@@ -17,6 +17,51 @@
         .bg-blue { color: rgb(0, 166, 255); }
         .bg-red { color: red; }
         .bg-green { color: lightgreen;}
+
+        .table-form {
+            border-collapse: collapse;
+            width: 500px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .table-form td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .table-form .judul {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .bg-nama { background-color: orange; }
+        .bg-tempat { background-color: #3b6ea5; color: white; }
+        .bg-jk { background-color: #ffc000; }
+        .bg-kelas { background-color: #70ad47; }
+        .bg-alamat { background-color: black; color: white; }
+        
+        .table-form input[type="text"], 
+        .table-form select, 
+        .table-form textarea {
+            width: 90%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .table-form textarea {
+            height: 80px;
+        }
+        .table-form .submit {
+            text-align: center;
+        }
+        .table-form button {
+            padding: 8px 20px;
+            cursor: pointer;
+        }
+
+        .area {
+            background-color: black;
+        }
     </style>
 </head>
 
@@ -27,7 +72,7 @@
 </h1>
     </div>
 <center>
-<img class="imej" src="../images CSS/iPhone 5c.png">
+<img class="imej" src="../Tugas file HTML/image/iPhone 5c.png">
 </center>
 <p>
    <b> The iPhone 5c</b>, simply put, is for those who've grown numb to Apple's largely evolutionary 
@@ -50,26 +95,106 @@ who feel that it simply must attract new markets to stay atop its game.
         <span style="font-style: italic;"><b>iPhone 5c</b></span> is proof that it won't do that in the phone arena, either.
 </p>
 
-<p>
-            Kebudayaan Indonesia yang multikultur seperti itu, ketika dikaji dari sisi dimensi waktu, dapat 
-        dibagi pula pengertiannya :
-        </p>
+<p style="font-style: italic;">Infographic by Troy Dunham for Engadget</p>
 
-        <p>
-        <ul><li>Pertamaa, kebudayaan (Indonesia) adalah kebudayaan yang sudah terbentuk.  </li></ul>
-        <ul><li>Kedua, kebudayaan (Indonesia) adalah kebudayaan yang sedang membentuk.  </li></ul>
-        <ul><li>Ketiga, adalah kebudayaan (Indonesia) adalah kebudayaan yang direncanakan untuk dibentuk </li></ul>
-        </p>
+<table border="1" style="border-collapse: collapse; width: 100%; text-align: center; font-family: Arial, Helvetica, sans-serif;">
 
-        <p>
-            Adapun Pengaruh Positif dapat berupa :
-            <ul>A. Peningkatan dalam bidang: </ul>
-           <ol><ul><li>sistem teknologi, </li></ul></ol>
-            <ol><ul><li>Ilmu Pengetahuan, dan </li></ul></ol>
-            <ol><ul><li>ekonomi</li></ul></ol>
-            <ul>B. Terjadinya pergeseran struktur kekuasaan dari otokrasi menjadi oligarki.</ul>
-            <ul>C. Mempercepat terwujudnya pemerintahan yang demokratis dan masyarakat madani.</ul>
-        </p>
+<tr>
+    <td rowspan="2" style="background-color: #7B2D8B; color: white; font-weight: bold; padding: 8px;">NO</td>
+    <td colspan="2" style="background-color: #E87722; color: white; font-weight: bold; padding: 8px;">NAMA LENGKAP</td>
+    <td colspan="3" style="background-color: #4CAF50; color: white; font-weight: bold; padding: 8px;">TUNJANGAN</td>
+    <td rowspan="2" style="background-color: #4472C4; color: white; font-weight: bold; padding: 8px;">GAJIH</td>
+    <td rowspan="2" style="background-color: #000000; color: white; font-weight: bold; padding: 8px;">TOTAL</td>
+</tr>
+
+<tr>
+    <td style="font-weight: bold; padding: 8px;">DEPAN</td>
+    <td style="font-weight: bold; padding: 8px;">BELAKANG</td>
+    <td style="font-weight: bold; padding: 8px;">ANAK</td>
+    <td style="font-weight: bold; padding: 8px;">ISTRI</td>
+    <td style="font-weight: bold; padding: 8px;">TRANSPORT</td>
+</tr>
+
+<tr>
+    <td style="padding: 8px;">&nbsp;</td>
+    <td style="padding: 8px;">&nbsp;</td>
+    <td style="padding: 8px;">&nbsp;</td>
+    <td style="padding: 8px;">&nbsp;</td>
+    <td style="padding: 8px;">&nbsp;</td>
+    <td style="padding: 8px;">&nbsp;</td>
+    <td style="padding: 8px;">&nbsp;</td>
+    <td style="padding: 8px;">&nbsp;</td>
+</tr>
+
+<tr style="background-color: #D3D3D3;">
+    <td colspan="3" style="font-weight: bold; padding: 8px;">TOTAL</td>
+    <td style="padding: 8px;">&nbsp;</td>
+    <td style="padding: 8px;">&nbsp;</td>
+    <td style="padding: 8px;">&nbsp;</td>
+    <td style="padding: 8px;">&nbsp;</td>
+    <td style="padding: 8px;">&nbsp;</td>
+</tr>
+
+</table>
+
+<form action="#" method="POST">
+        <table class="table-form">
+            <tr>
+                <td colspan="3" class="judul">Form Input Siswa</td>
+            </tr>
+            <tr>
+                <td class="bg-nama">Nama</td>
+                <td>:</td>
+                <td><input type="text" name="nama" required></td>
+            </tr>
+            <tr>
+                <td class="bg-tempat">Tempat Lahir</td>
+                <td>:</td>
+                <td><input type="text" name="tempat_lahir" required></td>
+            </tr>
+            <tr>
+                <td class="bg-jk">Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <label><input type="radio" name="jk" value="Laki-Laki"> Laki-Laki</label><br>
+                    <label><input type="radio" name="jk" value="Perempuan"> Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="bg-kelas">Kelas</td>
+                <td>:</td>
+                <td>
+                    <select name="kelas">
+                        <option value="">Pilih Kelas</option>
+                        <option value="X RPL">X RPL</option>
+                        <option value="X TKJ">X TKJ</option>
+                        <option value="X MM">X MM</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="bg-kelas">Hobi</td>
+                <td>:</td>
+
+                <td>
+                    <label><input type="radio" name="hobi" value="Belajar">Belajar</label>
+                    <label><input type="radio" name="hobi" value="Membaca">Membaca</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="bg-alamat">Alamat</td>
+                <td class="bg-alamat">:</td>
+                <td class="area"><textarea name="alamat"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="submit">
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
 
 </body>
 </html>

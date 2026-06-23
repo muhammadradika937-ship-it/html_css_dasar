@@ -7,3 +7,7 @@ let luasAlasPrisma = (aLastPrisma * tinggiSegi) / 2;
 let kelilingAlasPrisma = s1Prisma + s2Prisma + s3Prisma;
 
 let volumePrisma = luasAlasPrisma * tinggiPrisma;
+let luasPermukaanPrisma = (2 * luasAlasPrisma) + (kelilingAlasPrisma * tinggiPrisma);
+
+console.log("Volume Prisma Segitiga:", volumePrisma);
+console.log("Luas Permukaan Prisma Segitiga:", luasPermukaanPrisma);
