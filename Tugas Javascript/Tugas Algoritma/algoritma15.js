@@ -1,0 +1,10 @@
+const prompt = require('prompt-sync')({sigint: true});
+let meter = parseFloat(prompt("Masukkan panjang dalam meter:"));
+  let cm = meter * 100;
+  let mm = meter * 1000;
+  let inchi = mm / 25.4;
+  let kaki  = cm / 30.48;
+  let yard  = meter / 0.9144;
+  console.log("Inchi: " + inchi.toFixed(4));
+  console.log("Kaki : " + kaki.toFixed(4));
+  console.log("Yard : " + yard.toFixed(4));

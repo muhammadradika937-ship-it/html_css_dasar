@@ -1,0 +1,12 @@
+const prompt = require('prompt-sync')({sigint: true});
+let uang = parseInt(prompt("Masukkan nilai uang (kelipatan 25):"));
+  let r1000 = Math.floor(uang / 1000); uang %= 1000;
+  let r500  = Math.floor(uang / 500);  uang %= 500;
+  let r100  = Math.floor(uang / 100);  uang %= 100;
+  let r50   = Math.floor(uang / 50);   uang %= 50;
+  let r25   = Math.floor(uang / 25);
+  console.log("Rp1000: " + r1000 + " lembar");
+  console.log("Rp500 : " + r500  + " lembar");
+  console.log("Rp100 : " + r100  + " lembar");
+  console.log("Rp50  : " + r50   + " lembar");
+  console.log("Rp25  : " + r25   + " lembar");
